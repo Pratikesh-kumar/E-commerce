@@ -1,0 +1,36 @@
+.Items{
+   
+    margin-right: 50px;
+    flex-wrap: wrap;
+
+}
+.button{
+   background: rgb(13, 201, 226);
+   cursor: pointer;
+   
+}
+button:active {
+    transform: scale(1.2);
+  }
+  
+.price{
+ font-size: larger;
+}
+.img{
+    box-shadow: 5px 5px 10px #000;
+    height: 200px;
+    margin :30px 0px;
+    
+    overflow: hidden;
+    width: 200px;
+    transition: transform 500ms;
+    border-radius: 20px;
+    
+}
+.img:hover{
+    transform: scale(105%);
+}
+
+.link{
+    text-decoration: none;
+}

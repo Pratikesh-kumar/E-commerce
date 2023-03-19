@@ -1,0 +1,19 @@
+.body {
+     height: 50px;
+    justify-content: center;
+     text-align: center;
+    left: 0;
+    right: 0;
+    font-family: cursive;
+    
+   
+} 
+.music{
+   font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    margin-left: 44rem;
+    margin-top: 2rem;
+    color: aliceblue;
+}

@@ -1,0 +1,24 @@
+.button {
+    cursor: pointer;
+    float: right;
+   
+    font-weight: bold;
+    display: flex;
+    padding-right: 11px;
+    background-color: #000;
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: #eefc5a;
+    cursor: pointer;
+    margin-right: 50px;
+    width: 53px;
+      height: 25px;
+  }
+  
+  .badge {
+    position: absolute;
+    color: #56ccf2;
+    font-size: 20px;
+    top: -3px;
+    right: 36px;
+  }
