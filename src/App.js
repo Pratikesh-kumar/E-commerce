@@ -4,10 +4,13 @@ import Body from './Layout/Body/Body';
 import Cart from './Cart/Cart';
 import CartProvider from "./Store/CartProvider";
 import CartContext from "./Store/cart-context";
+import { Route } from "react-router";
+import About from "./Pages/AboutUs";
+import Home from "./Pages/Home";
 
 
 const App = () => {
-  const cartCtx = useContext(CartContext);
+  // const cartCtx = useContext(CartContext);
   const [cartIsShown, setCartIsShown] = useState(false);
 
   const ShowCartHandler = () => {
@@ -26,6 +29,12 @@ console.log(cartIsShown)
       <CartProvider>
         {cartIsShown && <Cart onClose={HideCartHandler} />}
         <Header onShowCart={ShowCartHandler} />
+        <Route path="/AboutUs">
+          <About />
+        </Route>
+        <Route path="/Home">
+          <Home />
+        </Route>
         <Body/>
         </CartProvider>
         </Fragment>

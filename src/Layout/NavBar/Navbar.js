@@ -1,27 +1,31 @@
 import { Fragment } from "react";
-import classes from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
+
+import classes from './Navbar.module.css';
 
 const NavBar = (props) => {
  
  
   return (
     <Fragment>
-      <div className={classes.navbar}>
-        <div className={classes.icon} >
+      <nav className={classes.navbar}>
+        <NavLink className={classes.icon} to="/Home">
           HOME
-        </div>
-        <div className={classes.icon} >
+        </NavLink>
+        <NavLink className={classes.icon} to="/Store">
           STORE
-        </div>
-        <div className={classes.icon} >
+        </NavLink>
+        <NavLink className={classes.icon} to="/AboutUs">
           ABOUT
-        </div>
-       
-        <div className={classes.icon} >
+        </NavLink>
+        <NavLink className={classes.icon} to="/Login">
+          LOGIN
+        </NavLink>
+        <NavLink className={classes.icon} to="/ContactUs">
           CONTACT US
-        </div>
+        </NavLink>
        
-      </div>
+      </nav>
     </Fragment>
   );
 };

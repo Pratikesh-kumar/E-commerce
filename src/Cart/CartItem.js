@@ -8,7 +8,7 @@ const CartItems = (props) => {
   const cartCntx = useContext(CartContext);
   const onRemoveHandler = (event) => {
     cartCntx.removeItem(props.id);
-    const id = props._id;
+    // const id = props._id;
   }
 
   return (

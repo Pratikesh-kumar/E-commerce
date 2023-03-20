@@ -12,6 +12,7 @@ const ProductItem = (props) => {
   const addItemToCart = (event) => {
     event.preventDefault();
     cartCtx.addItem({ ...props, quantity: props.quantity });
+    
    
 };
 
