@@ -7,6 +7,7 @@ import CartContext from "./Store/cart-context";
 import { Route } from "react-router";
 import About from "./Pages/AboutUs";
 import Home from "./Pages/Home";
+import ContactUs from "./Pages/ContactUs";
 
 
 const App = () => {
@@ -34,6 +35,9 @@ console.log(cartIsShown)
         </Route>
         <Route path="/Home">
           <Home />
+        </Route>
+        <Route path="/ContactUs">
+          <ContactUs />
         </Route>
         <Body/>
         </CartProvider>

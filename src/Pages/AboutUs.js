@@ -2,9 +2,13 @@ import React from 'react';
 // import image from "../Images/download.jfif";
 import classes from './AboutUs.module.css';
 
+
 const About = () => {
   return (
+    <>
+     <div style={{backgroundColor:'rgb(201, 126, 126)', width:1250,height:200,textAlign:'center',marginTop:68,fontSize:100,fontFamily:'cursive'}}>The Generics</div>
     <section className={classes.section}>
+     
       
       <h2 className={classes.h2}>ABOUT</h2>
       <div>
@@ -46,6 +50,7 @@ const About = () => {
         </p>
       </div>
     </section>
+    </>
   );
 };
 
