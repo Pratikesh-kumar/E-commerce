@@ -8,6 +8,8 @@ import { Route } from "react-router";
 import About from "./Pages/AboutUs";
 import Home from "./Pages/Home";
 import ContactUs from "./Pages/ContactUs";
+import ProductDetail from "./Pages/ProductDetails";
+import Store from "./Pages/Store";
 
 
 const App = () => {
@@ -39,7 +41,13 @@ console.log(cartIsShown)
         <Route path="/ContactUs">
           <ContactUs />
         </Route>
-        <Body/>
+        <Route path="/products/:product_id">
+            <ProductDetail />
+          </Route>
+          <Route path="/Store">
+          <Store />
+        </Route>
+        {/* <Body/> */}
         </CartProvider>
         </Fragment>
   )
