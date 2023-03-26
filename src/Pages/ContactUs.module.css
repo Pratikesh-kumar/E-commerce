@@ -44,7 +44,7 @@
   }
   
   .form button:hover {
-    background-color: green;
+    background-color: rgb(154, 46, 168);
   }
   
   .form button:active {

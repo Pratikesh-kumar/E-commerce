@@ -1,5 +1,6 @@
 body{
   background-color: rgb(224, 237, 229);
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;

@@ -3,7 +3,9 @@ import classes from "./ProductDetails.module.css";
 import { useParams } from "react-router-dom";
 
 const ProductDetail = (props) => {
+  console.log(props +'hii')
   const params = useParams();
+  console.log(params)
 
   return (
     <Fragment>

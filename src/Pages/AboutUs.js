@@ -6,7 +6,7 @@ import classes from './AboutUs.module.css';
 const About = () => {
   return (
     <>
-     <div style={{backgroundColor:'rgb(201, 126, 126)', width:1250,height:200,textAlign:'center',marginTop:68,fontSize:100,fontFamily:'cursive'}}>The Generics</div>
+     <div style={{backgroundColor:'rgb(201, 126, 126)', width:1700,height:200,textAlign:'center',marginTop:68,fontSize:100,fontFamily:'cursive'}}>The Generics</div>
     <section className={classes.section}>
      
       
