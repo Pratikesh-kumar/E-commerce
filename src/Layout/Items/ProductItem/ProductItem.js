@@ -13,7 +13,7 @@ const ProductItem = (props) => {
   event.preventDefault();
  cartCtx.addItem({ ...props, quantity: props.quantity });
  axios.post(
-   `https://crudcrud.com/api/50e06decf91a493c8bfd7e06f4d8126d/cart${email}`,
+   `https://crudcrud.com/api/fdcb5016119545998533fc3d9ca2562e/cart${email}`,
    props
  ).then((res) => {
    console.log(res.data, "Successfull");

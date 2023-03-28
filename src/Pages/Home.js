@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import {  Row,Col,Button } from "react-bootstrap";
 import "./Home.css";
-// import Icon from "../Images/icon.ico";
+import Assests from "../Assets/BandMembers.png";
 
 const Home2 = () => {
   return (<Fragment>
@@ -17,7 +17,7 @@ const Home2 = () => {
         </Button>{" "}
         <br />
         <a rel="noreferrer" href="/" target="_blank">
-          {/* <img src={Icon} alt="Play" /> */}
+          <img src={Assests} alt="Play" />
         </a>
       </Col>
     </Row>

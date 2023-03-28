@@ -13,6 +13,7 @@ import ContactUs from "./Pages/ContactUs";
 import ProductDetail from "./Pages/ProductDetails";
 import Store from "./Pages/Store";
 import LoginForm from "./Pages/LoginPage";
+import Footer from "./Layout/Footer/Footer";
 
 
 const App = () => {
@@ -38,7 +39,7 @@ const App = () => {
   console.log(cartIsShown);
   useEffect(() => {
     if (!email) return;
-     axios.get(`https://crudcrud.com/api/50e06decf91a493c8bfd7e06f4d8126d/cart${email}`).then((res) => {
+     axios.get(`https://crudcrud.com/api/fdcb5016119545998533fc3d9ca2562e/cart${email}`).then((res) => {
        const data= (res.data)
        for (const key in data) {
          const item = data[key];
@@ -81,6 +82,7 @@ const App = () => {
         </Route>
         {/* <Body/> */}
       </CartProvider>
+      <Footer/>
     </Fragment>
   );
 };

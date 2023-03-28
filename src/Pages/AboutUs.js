@@ -1,5 +1,5 @@
 import React from 'react';
-// import image from "../Images/download.jfif";
+import Assets from '../Assets/BandMembers.png'
 import classes from './AboutUs.module.css';
 
 
@@ -12,10 +12,10 @@ const About = () => {
       
       <h2 className={classes.h2}>ABOUT</h2>
       <div>
-        {/* <img
-          src={image}
+        <img
+          src={Assets}
           alt='Musical Band'
-        /> */}
+        />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec
