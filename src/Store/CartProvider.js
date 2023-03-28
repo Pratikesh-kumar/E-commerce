@@ -3,10 +3,9 @@ import CartContext from "./cart-context";
 
 
  const CartProvider = (props) => {
-//   if (!localStorage.getItem("email")) {
-//     localStorage.setItem("email", "");
-//   }
- 
+  if (!localStorage.getItem("email")) {
+    localStorage.setItem("email", "");
+  }
 
   const [items, setItems] = useState([]);
 

@@ -1,12 +1,13 @@
-import React from "react";
+import {React,useContext,useEffect} from "react";
 import ProductItem from './ProductItem/ProductItem'
 
 import classes from "./AvailableItem.module.css";
-// import CartContext from "../../Store/cart-context";
+import CartContext from "../../Store/cart-context";
+import axios from "axios";
 
 
 const AvailableItems = (props) => {
-
+  const cartCtx = useContext(CartContext);
 
   const productsArr = [
     {
@@ -49,6 +50,18 @@ const AvailableItems = (props) => {
       imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
     },
   ];
+  let emailId = localStorage.getItem("email").replace(".", "").replace("@", "");
+  
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://crudcrud.com/api/50e06decf91a493c8bfd7e06f4d8126d/cart${emailId}`
+      )
+      .then((res) => {
+        cartCtx.initilizeCart(res.data);
+      });
+  }, []);
   
   
   return (
@@ -64,7 +77,7 @@ const AvailableItems = (props) => {
             price={item.price}
             image={item.imageUrl}
             quantity={1}
-          
+            _id={item._id}
           
             />
           );

@@ -1,4 +1,5 @@
 .button {
+  position: relative;
     cursor: pointer;
     float: right;
    
@@ -19,6 +20,16 @@
     position: absolute;
     color: #56ccf2;
     font-size: 20px;
-    top: -3px;
-    right: 36px;
+    top: -8px;
+    right: 0px;
+  }
+  .logoutButton {
+    background-color: rgb(188, 78, 78);
+    color: white;
+    border: 2px solid rgb(192, 185, 183);
+    padding: 5px;
+    border-radius: 11px;
+    margin-left: 35px;
+    float: right;
+    margin: 0 15px 0px 0px;
   }

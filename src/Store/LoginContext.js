@@ -8,6 +8,7 @@ const LoginContext = React.createContext({
 });
 
 export const LoginContextProvider = (props) => {
+  console.log('rendered')
   const initialToken=localStorage.getItem('token')
   const [token, setToken] = useState(initialToken);
   const userIsLoggedIn = !!token;
@@ -20,7 +21,7 @@ export const LoginContextProvider = (props) => {
   const logoutHandler = () => {
     setToken(null);
     localStorage.removeItem('token')
-    localStorage.removeItem("email")
+  
   };
 
   const contextValue = {
